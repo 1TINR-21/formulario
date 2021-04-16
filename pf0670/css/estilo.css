@@ -4,3 +4,7 @@
     background-color: #f5f5dc;
     height: 800px;
 }
+
+#frm-01 input {
+    border-radius: 5px;
+}
