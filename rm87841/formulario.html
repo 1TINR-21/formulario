@@ -9,20 +9,23 @@
   <body>
     <div id="container">
       <h1> Formulário de Cadastro </h1>
-      <form action="#" method="GET">
-        <div>
-          <label for="idTxtNm"> Nome: </label>
-          <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome">
-        </div>
-        <div>
-          <label for="idTxtEmail"> Email: </label>
-          <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email">
-        </div>
-        <div>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Limpar">
-        </div>
-      </form>
+      <hr>
+      <div id="form" class="form">
+        <form action="#" method="GET">
+          <div class="form__field">
+            <label for="name"> Nome: </label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Este campo não pode ficar vazio.')" pattern="[A-Za-z]{10}">
+          </div>
+          <div class="form__field">
+            <label for="email"> Email: </label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required oninvalid="setCustomValidity('Este campo não pode ficar vazio.')">
+          </div>
+          <div class="form__actions">
+            <input type="submit" class="send" value="Enviar">
+            <input type="reset" class="clear" value="Limpar">
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

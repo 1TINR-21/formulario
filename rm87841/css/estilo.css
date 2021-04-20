@@ -1,6 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #a9d6e5, #76bddf, #45a2da, #0f85d4, #0466c8);
+}
+
 #container {
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color: #f5f5dc;
-    height: 800px;
+  background-color: #FFF;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 80vh;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 0px #0003;
+}
+
+#container h1 {
+  margin: 0 0 5px 0;
+  font-weight: 300;
+}
+
+#container hr {
+  border: unset;
+  height: 1px;
+  background-color: #CCC;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  display: flex;
+  margin: 10px 0;
+}
+
+.form__field input {
+  border: 1px solid #CCC; 
+  height: 20px;
+  padding: 2px 4px;
+  transition: border 200ms;
+  outline: unset;
+}
+
+.form__field input:active, .form__field input:focus {
+  outline: unset;
+  border: 1px solid #00b4d8
+}
+
+.form__field label {
+  width: 55px;
+}
+
+.form__actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__actions input {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  outline: unset;
+  border: unset;
+  transition: background-color 200ms;
+}
+
+.form__actions input:active, .form__actions input:focus {
+  outline: unset;
+}
+
+.form__actions input.send {
+  background-color: #44a75e;
+  color: #FFF;
+}
+
+.form__actions input.send:focus {
+  background-color: #008239;
+} 
+
+.form__actions input.clear {
+  background-color: #f93943;
+  color: #FFF;
+}
+
+.form__actions input.clear:focus {
+  background-color: #db222a;
+} 
+
+.form__actions input:last-child {
+  margin-left: 10px
 }
