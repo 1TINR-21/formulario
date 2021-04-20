@@ -14,11 +14,11 @@
         <form action="#" method="GET">
           <div class="form__field">
             <label for="name"> Nome: </label>
-            <input type="text" name="name" id="name" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Este campo não pode ficar vazio.')" pattern="[A-Za-z]{10}">
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Preencha corretamente o campo nome.')" pattern="[A-Za-z]{10}">
           </div>
           <div class="form__field">
             <label for="email"> Email: </label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email" required oninvalid="setCustomValidity('Este campo não pode ficar vazio.')">
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required oninvalid="setCustomValidity('Preencha corretamente o campo email.')" pattern="[a-z0-9]{3,50}@[a-z0-9]{2,50}.[a-z]{2,3}">
           </div>
           <div class="form__actions">
             <input type="submit" class="send" value="Enviar">
