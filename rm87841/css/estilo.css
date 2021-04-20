@@ -38,6 +38,18 @@ body {
   flex-direction: column;
 }
 
+.form__container {
+  border: 1px solid #CCC;
+  margin-bottom: 10px;
+  font-size: .9rem;
+}
+
+.form__container legend {
+  padding: 0 5px;
+  font-weight: 350;
+  font-size: 1.1em;
+}
+
 .form__field {
   display: flex;
   margin: 10px 0;
@@ -57,7 +69,8 @@ body {
 }
 
 .form__field label {
-  width: 55px;
+  font-size: 1em;
+  width: 50px;
 }
 
 .form__actions {
