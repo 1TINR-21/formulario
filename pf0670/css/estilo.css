@@ -4,3 +4,27 @@
     background-color: #f5f5dc;
     height: 800px;
 }
+
+#frm-01 input {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+input:invalid {
+    border-color: #dc143c;
+    background-color: #8b0000;
+    color: #fff;
+}
+
+#frm-01 input[type="submit"],
+#frm-01 input[type="reset"] {
+    border-radius: 5px;
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
+
+}
