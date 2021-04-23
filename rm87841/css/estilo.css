@@ -1,3 +1,14 @@
+:root {
+  --hr-color: #CCC;
+  --input-border-color: #CCC;
+  --input-border-focus-color: #00b4d8;
+  --input-success-color: #44a75e;
+  --input-success-focus-color: #008239;
+  --input-error-color: #f93943;
+  --input-error-focus-color: #db222a;
+  --input-button-text-color: #FFF;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +20,18 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right top, #a9d6e5, #76bddf, #45a2da, #0f85d4, #0466c8);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 #container {
@@ -30,7 +53,7 @@ body {
 #container hr {
   border: unset;
   height: 1px;
-  background-color: #CCC;
+  background-color: var(--hr-color);
 }
 
 .form {
@@ -39,7 +62,7 @@ body {
 }
 
 .form__container {
-  border: 1px solid #CCC;
+  border: 1px solid var(--input-border-color);
   margin-bottom: 10px;
   font-size: .9rem;
 }
@@ -55,22 +78,35 @@ body {
   margin: 10px 0;
 }
 
-.form__field input {
-  border: 1px solid #CCC; 
+.form__field input, .form__field select {
+  border: 1px solid var(--input-border-color); 
   height: 20px;
   padding: 2px 4px;
   transition: border 200ms;
   outline: unset;
+  margin: 0;
 }
 
-.form__field input:active, .form__field input:focus {
+.form__field select {
+  height: 26px;
+  color: #666;
+}
+
+.form__field input:active, .form__field input:focus, .form__field select:active, .form__field select:focus {
   outline: unset;
-  border: 1px solid #00b4d8
+  border: 1px solid var(--input-border-focus-color);
+}
+
+.form__field input[type="radio"] {
+  margin: 0 10px 0 0;
 }
 
 .form__field label {
   font-size: 1em;
-  width: 50px;
+  min-width: 50px;
+  width: auto;
+  text-align: right;
+  margin-right: 5px;
 }
 
 .form__actions {
@@ -93,21 +129,21 @@ body {
 }
 
 .form__actions input.send {
-  background-color: #44a75e;
-  color: #FFF;
+  background-color: var(--input-success-color);
+  color: var(--input-button-text-color);
 }
 
 .form__actions input.send:focus {
-  background-color: #008239;
+  background-color: var(--input-success-focus-color);
 } 
 
 .form__actions input.clear {
-  background-color: #f93943;
-  color: #FFF;
+  background-color: var(--input-error-color);
+  color: var(--input-button-text-color);
 }
 
 .form__actions input.clear:focus {
-  background-color: #db222a;
+  background-color: var(--input-error-focus-color);
 } 
 
 .form__actions input:last-child {

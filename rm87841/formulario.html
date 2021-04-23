@@ -16,11 +16,45 @@
             <legend> Dados Pessoais </legend>
             <div class="form__field">
               <label for="name"> Nome: </label>
-              <input type="text" name="name" id="name" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Preencha corretamente o campo nome.')" pattern="[A-Za-z]{10}">
+              <input type="text" class="flex-1" name="name" id="name" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Preencha corretamente o campo nome.')" pattern="[A-Za-z]{10}">
             </div>
             <div class="form__field">
               <label for="email"> Email: </label>
-              <input type="email" name="email" id="email" placeholder="Digite seu email" required oninvalid="setCustomValidity('Preencha corretamente o campo email.')" pattern="[a-z0-9]{3,50}@[a-z0-9]{2,50}.[a-z]{2,3}">
+              <input type="email" class="flex-1" name="email" id="email" placeholder="Digite seu email" required oninvalid="setCustomValidity('Preencha corretamente o campo email.')" pattern="[a-z0-9]{3,50}@[a-z0-9]{2,50}.[a-z]{2,3}">
+            </div>
+          </fieldset>
+          <fieldset class="form__container d-flex">
+            <legend> Gênero </legend>
+            <div class="form__field align-center">
+              <label for="masculino"> Masculino </label>
+              <input type="radio" id="masculino" name="genero" value="M" required>
+            </div>
+            <div class="form__field align-center">
+              <label for="feminino"> Feminino </label>
+              <input type="radio" id="feminino" name="genero" value="N" required>
+            </div>
+            <div class="form__field align-center">
+              <label for="outros"> Outros </label>
+              <input type="radio" id="outros" name="genero" value="O" required>
+            </div>
+          </fieldset>
+          <fieldset class="form__container">
+            <legend> Endereço </legend>
+            <div class="form__field">
+              <label for="rua"> Rua: </label>
+              <input type="text" name="rua" id="rua" class="flex-1" placeholder="Digite o nome da rua" required oninvalid="setCustomValidity('Preencha corretamente o campo rua')" pattern="[A-Za-z0-9.%-]+">
+            </div>
+            <div class="form__field">
+              <label for="estados"> Estado: </label>
+              <select name="estados" id="estados" class="flex-1">
+                <option selected="select" value="">Selecione algum estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="BH">Bahia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+              </select>
             </div>
           </fieldset>
           <div class="form__actions">
