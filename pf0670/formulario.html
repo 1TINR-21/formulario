@@ -11,72 +11,22 @@
 <body>
     <div id="container">
 
-        <h1>EXEMPLO DE FORMULÁRIO</h1>
+        <h1>FORMULÁRIO DE CADASTRO</h1>
 
-        <div id="frm-01">
-
+        <div>
             <form action="#" method="GET">
-                <fieldset>
-                    <legend>FORMULÁRIO DE CADASTRO</legend>
-                    <div>
-                        <label for="idTxtNm">Nome:</label>
-                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome." required
-                            oninvalid="setCustomValidity('Somente caractéres podem ser digitados nesse campo!')"
-                            pattern="[a-zA-Z]{3,50}">
-                    </div>
-                    <div>
-                        <label for="idTxtEmail">Email:</label>
-                        <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email."
-                            oninvalid="setCustomValidity('Digite um email válido!')" required
-                            pattern="[a-z0-9]{3,50}@[a-z0-9]{2,50}.[a-z]{2,3}">
-                        <!-- jujubinha2021@hotmail12.com -->
-                    </div>
-
-                    <fieldset>
-                        <legend>GÊNERO</legend>
-                        <div class="gen">
-                            <div>
-                                <label for="idRdbGenM">Masculino</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenM" checked="checked" value="m">
-                            </div>
-                            <div>
-                                <label for="idRdbGenF">Feminino</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
-                            </div>
-                            <div>
-                                <label for="idRdbGenO">Outros</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="endereco">
-                        <legend>ENDEREÇO</legend>
-                        <div>
-                            <div>
-                                <label for="">Rua:</label>
-                                <input type="text" name="txtRua" id="idTxtRua" placeholder="Digite seu email."
-                                    oninvalid="setCustomValidity('Este campo necessita ser preenchido!')" required
-                                    pattern="[a-zA-Z0-9.%-]+">
-                            </div>
-                            <div>
-                                <select name="selEstados" id="idSelEstados">
-                                    <option selected="select" value="0">SELECIONE UMA OPÇÃO</option>
-                                    <option value="sp">SÃO PAULO</option>
-                                    <option value="rj">RIO DE JANEIRO</option>
-                                    <option value="sc">STA CATARINA</option>
-                                    <option value="ba">BAHIA</option>
-                                    <option value="rr">RORAIMA</option>
-                                </select>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <div>
-                        <input type="submit" value="ENVIAR">
-                        <input type="reset" value="LIMPAR">
-                    </div>
-                </fieldset>
+                <div>
+                    <label for="idTxtNm">Nome:</label><br>
+                    <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome.">
+                </div>
+                <div>
+                    <label for="idTxtEmail">Email:</label><br>
+                    <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email.">
+                </div>
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </div>
             </form>
         </div>
 
