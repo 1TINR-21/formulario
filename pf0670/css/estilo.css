@@ -4,3 +4,41 @@
     background-color: #f5f5dc;
     height: 800px;
 }
+
+#frm-01 input[type="text"] {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+input:invalid {
+    border-color: #dc143c;
+
+}
+
+#frm-01 input[type="submit"],
+#frm-01 input[type="reset"] {
+    border-radius: 5px;
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
+
+}
+
+.gen input[type="radio"] {
+    width: 5%;
+}
+
+.gen label {
+    display: block;
+}
+
+.endereco select {
+    padding: 1% 1%;
+    margin: 2% 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
