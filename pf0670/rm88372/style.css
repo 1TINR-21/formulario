@@ -1,0 +1,52 @@
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+}
+
+
+
+.box01{
+   background-color: red;
+    width:100vw;
+}
+
+
+.box04{
+    background-color: yellow;
+    color:black;
+}
+
+.box02{
+    background-color: green;
+    width:50vw;
+
+}
+.box03{
+    background-color: blue;
+    width:50vw;
+}
+
+@media screen and (max-width:800px){   
+.box02{
+    background-color: green;
+    width:100vw;
+
+}
+.box03{
+    background-color: blue;
+    width:100vw;
+
+}
+}
