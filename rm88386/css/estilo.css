@@ -5,7 +5,7 @@
     height: 800px;
 }
 
-#frm-01 input {
+#frm-01 input[type="text"] {
     border-radius: 5px;
     display: block;
     margin: auto;
@@ -27,4 +27,17 @@ input:invalid {
     padding: 10px 0 10px 0;
     margin: 5px 0 5px 0;
 
+}
+.gen input[type="radio"]{
+    width: 5%;
+    display: inline-block;
+}
+.gen label{
+    display: block;
+}
+.endereco select{
+    padding: 1% 1%;
+    margin: 2% 0%;
+    border-radius: 5px;
+    font-size: 16px;
 }

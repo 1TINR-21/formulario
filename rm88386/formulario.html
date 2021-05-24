@@ -31,6 +31,42 @@
                             pattern="[a-z0-9]{3,50}@[a-z0-9]{2,50}.[a-z]{2,3}">
                         <!-- jujubinha2021@hotmail12.com -->
                     </div>
+                    <fieldset>
+                        <legend>GÊNERO</legend>
+                        <div class="gen">
+                            <div>
+                                <label for="idRdbGenM">Masculino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenM" value="M" checked/>
+                            </div>
+                            <div>
+                                <label for="idRdbGenF">Feminino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenF" value="F"/>
+                            </div>
+                            <div>
+                                <label for="idRdbGenO">Outros</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenO" value="O"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="endereco">
+                        <legend>ENDEREÇO</legend>
+                        <div>
+                            <div>
+                                <label for="idTxtRua">Rua:</label>
+                                <input type="text" name="txtRua" id="idTxtRua" placeholder="Digite sua rua." oninvalid="setCustomValidity('Este campo necessita ser preenchido!')" pattern="[a-zA-Z0-9.%-]+"/>
+                            </div>
+                            <div>
+                                <select name="selEstados" id="idSelEstados">
+                                    <option value="0" selected>Selecione uma opção</option>
+                                    <option value="sp">São Paulo</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="rr">Roraima</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
                     <div>
                         <input type="submit" value="ENVIAR">
                         <input type="reset" value="LIMPAR">
@@ -38,8 +74,6 @@
                 </fieldset>
             </form>
         </div>
-
     </div>
 </body>
-
 </html>

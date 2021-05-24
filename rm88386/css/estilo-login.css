@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1{
+    max-width: 500px;
+    margin: 5% auto;
+}
+.form-01{
+    max-width: 500px;
+    margin: 10% auto;
+}
+.input-base{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.input-field{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+}
+.input-field:focus{
+    border: 2px solid rgb(72, 72, 138);
+}
+.icon{
+    padding: 10px;
+    background-color: rgb(72, 72, 138);
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(72, 72, 138);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90.5%;
+    opacity: 0.9;
+}
+.btn:hover{
+    opacity: 1;
+}
