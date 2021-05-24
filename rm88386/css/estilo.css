@@ -4,7 +4,6 @@
     background-color: #f5f5dc;
     height: 800px;
 }
-
 #frm-01 input[type="text"] {
     border-radius: 5px;
     display: block;
@@ -18,7 +17,6 @@ input:invalid {
     background-color: #8b0000;
     color: #fff;
 }
-
 #frm-01 input[type="submit"],
 #frm-01 input[type="reset"] {
     border-radius: 5px;
